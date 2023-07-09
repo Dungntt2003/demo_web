@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Tablet */
+body {
+    line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* HEADING */
+.heading {
+    position: fixed;
+    width : 100%;
+    background-color: white;
+    color : black;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 8px 16px;
+    z-index: 100;
+}
+
+.heading-link{
+    text-decoration: none;
+    color : black;
+    display: inline-block;
+    padding : 4px 8px;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+.heading-link:hover {
+    background-color: #ccc;
+}
+
+
+/* Body */
+
+
+
+/* INTRO */
+.intro {
+    position: relative;
+}
+
+.intro-pic{
+    width : 100%;
+}
+.intro-des{
+    position: absolute;
+    left: 40px;
+    bottom : 10%;
+    color : #5e5f61;
+    font-size: 40px ;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+/* ABOUT */
+.about {
+    padding : 76px 16px;
+    display : flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+}
+.general-header {
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.about-para{
+    font-size: 18px;
+}
+.about-box{
+    flex :1;
+    padding : 22px 24px;
+}
+.about-des{
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+.about-pic {
+    width : 100%;
+}
+
+
+/* Menu */
+
+.menu {
+    padding : 74px 16px;
+    border : 1px solid #ccc;
+}
+.menu-list {
+    margin-bottom: 40px;
+}
+
+.menu-header {
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin: 12px 0;
+    font-weight: 400;
+}
+.menu-des {
+    font-size: 16px;
+    color : #757575;
+    margin-bottom: 24px;
+}
+.menu-pic {
+    width : 100%;
+}
+
+/* CONTACT */
+
+.contact {
+    padding : 74px 16px;
+}
+.contact-he {
+    text-align: left;
+    font-size: 35px;
+}
+.contact-des {
+    margin-bottom: 24px;
+}
+.contact-para {
+    color : #607da9;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.contact-list {
+    margin: 12px 0;
+}
+.contact-inp{
+    width : 100%;
+    padding : 10px 12px;
+    border-radius: 6px;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+.contact-inp + .contact-inp {
+    margin-top: 12px;
+}
+.contact-btn{
+    margin: 12px 0;
+    background-color: #f1f1f1;
+    color : black;
+    font-size: 16px;
+    padding : 10px 16px;
+    border : none;
+}
+.contact-btn:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+
+/* FOOTER  */
+
+footer {
+    text-align: center;
+    padding : 50px 0;
+    background-color: #f1f1f1;
+}
+.footer-link {
+    color : black
+}
+.footer-link:hover {
+    color : green;
+}
+
+
+/* PC */
+@media screen and (min-width : 1024px){
+    .about, .menu, .contact {
+        padding : 76px 150px;
+    }
+    .about, .menu {
+        border :  none;
+    }
+    .menu-wrap {
+        display : flex;
+        flex : 1;
+    }
+    .menu-pic {
+        width : 50%;
+    }
+    .menu-list {
+        width : 50%;
+    }
+}
+@media screen and (max-width : 723px){
+    .mobile {
+        display : none;
+    }
+    .about {
+        display : block;
+    }
+    .about-box {
+        width : 100%;
+    }
+}
+

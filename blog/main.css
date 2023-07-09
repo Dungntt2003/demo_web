@@ -1,0 +1,394 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    line-height: 1.6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* BODY */
+.heading {
+    position: fixed;
+    z-index : 1000;
+    background-color: rgba(255,255,255,1);
+    width : 100%;
+}
+.heading-wrap{
+
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading-item {
+    
+}
+.heading-link{
+    padding : 8px 16px;
+    display : inline-block;
+    text-decoration: none;
+    color : #777777;
+}
+.heading-link:hover {
+    background-color: #ccc;
+    color : black;
+}
+.pc {
+    display : none;
+}
+.intro{
+
+}
+.intro-pic{
+    position: relative;
+}
+.intro-img{
+    width : 100%;
+}
+.intro-des{
+    left: 50%;
+    transform: translateX(-50%);
+    top : 40%;
+    position: absolute;
+    color : white;
+    background-color: rgba(0,0,0,0.5);
+    padding : 12px;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+/* ABOUT */
+.about {
+    padding : 50px 16px;
+}
+.general-header {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+.about-des{
+    text-align: center;
+    font-style: italic;
+    color : #ccc;
+    margin-bottom: 8px;
+}
+.about-para{
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 24px;
+}
+.about-des1{
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 15px;
+    font-size: 15px;
+}
+.about-des2{
+    flex: 1;
+    font-size: 14px;
+    text-align: justify;
+}
+.about-wrap{
+    display : flex;
+    justify-content: space-between;
+    flex : 1;
+    margin-bottom: 24px;
+}
+.about-img {
+    flex: 1;
+    text-align: center;
+}
+.about-pic {
+    width: 80%;
+}
+
+.about-good{
+    padding : 20px 0;
+}
+.about-goodat{
+    text-align: center;
+    margin-bottom: 18px;
+}
+.about-descrip{
+    margin: 15px 0;
+}
+.about-special {
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+.about-line{
+    height: 35px;
+    width : 100%;
+    background-color: #f1f1f1 ;
+    text-align: center;
+    line-height: 35px;
+}
+.about-sub{
+    background-color: #616161;
+    color : white;
+}
+.one {
+    width : 90%;
+}
+.two {
+    width : 85%;
+}
+.three {
+    width : 75%;
+}
+
+.por{
+
+}
+.por-wrap{
+    background-color: black;
+    color : white;
+    display : flex;
+    justify-content: space-between;
+}
+.por-item{
+    width : 25%;
+    text-align: center;
+    padding : 32px 0;
+}
+.por-number {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+.por-des {
+    font-size: 14px;
+}
+.por-img {
+    position: relative;
+}
+.por-pic {
+    width : 100%;
+}
+.por-bonus {
+    position: absolute;
+    left : 50%;
+    transform: translateX(-50%);
+    top : 40%;
+    font-size: 50px;
+    color : white;
+    letter-spacing: 5px;
+}
+
+
+.work {
+    padding : 50px 16px;
+}
+.work-des {
+    text-align: center;
+    font-size: 14px;
+    color : #777777;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+.work-wrap {
+    display : flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.word-pic {
+    width : 100%;
+}
+.work-pic {
+    width : 24%;
+}
+.word-pic:hover {
+    opacity: 0.5;
+}
+.work-button {
+    display: flex;
+    justify-content: center;
+}
+.work-btn {
+    margin: 24px 0;
+    padding : 16px 24px;
+    border : none;
+    font-size: 16px;
+
+}
+.work-btn:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+.contact {
+    position: relative;
+}
+.contact-img {
+
+}
+.contact-pic {
+    width : 100%;
+    opacity: 0.8;
+}
+.contact-des {
+    position: absolute;
+    left : 50%;
+    transform: translateX(-50%);
+    top : 40%;
+    color : white;
+    font-size: 50px;
+    letter-spacing: 5pxs;
+}
+
+.place {
+    padding : 50px 16px;
+}
+.place-des {
+    text-align: center;
+    font-size: 14px;
+    color : #777777;
+    font-style: italic;
+    margin-bottom: 48px;
+}
+
+.place-wrap {
+    display : flex;
+    justify-content: space-between;
+}
+.place-item {
+    width : 50%;
+}
+.left {
+    flex : 2;
+}
+.right{
+    flex : 3;
+}
+.place-img {
+    text-align: center;
+}
+.place-pic {
+    width : 70%;
+    border-radius: 4px;
+}
+.place-list i{
+    font-size: 20px;
+    margin-right: 12px;
+}
+.place-list + .place-list {
+    margin-top: 8px;
+}
+
+.place-des3 {
+    font-size: 14px;
+    margin: 12px 0;
+}
+
+.place-input {
+    padding : 8px 8px;
+    border: 1px solid #ccc;
+}
+
+.differ {
+    margin: 12px 0 24px;
+}
+
+.place-btn {
+    float : right;
+    padding : 12px 20px;
+    background-color: black;
+    color : white;
+    margin-right: 24px;
+    border : none;
+}
+.place-btn:hover {
+    background-color: #ccc;
+    color : black;
+    cursor: pointer;
+}
+
+.footer {
+    padding : 60px 0;
+    text-align: center;
+    background-color: black;
+    color : white;
+}
+.footer-waylink{
+    text-decoration: none;
+    color : white;
+    display: inline-block;
+    background-color: white;
+    color : black;
+    padding : 8px 20px;
+    margin-bottom: 12px;
+}
+.footer-link {
+    color : white;
+}
+.footer-wrap {
+    margin: 12px 0 24px;
+}
+.footer-wrap i{
+    font-size: 25px;
+}
+.footer-wrap i:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.footer-link:hover {
+    color : green;
+}
+
+
+
+/* PC */
+@media screen and (min-width : 1024px) {
+    .about, .por , .work, .place{
+        padding : 50px 200px;
+    }
+    
+}
+
+@media screen and (max-width : 723px) {
+    .mobile{
+        display : none;
+    }
+    .pc {
+        display : inline-block;
+    }
+    .pc:hover {
+        background-color: black;
+        color : white;
+    }
+    .work-wrap {
+        display : block;
+    }
+    .work-pic {
+        width : 100%;
+    }
+    .place-wrap {
+        display : block;
+    }
+    .place {
+        padding : 36px 28px 100px;
+    }
+    .place-item {
+        width : 100%;
+    }
+    .place-pic {
+        width : 100%;
+    }
+    .right {
+        margin-top: 24px;
+    }
+    .place-input {
+        width : 100%;
+        padding : 12px 16px;
+        margin: 4px 0;
+        border-radius: 4px;
+    }
+    .place-btn {
+        margin-top: 24px;
+    }
+    .intro-des {
+        top : 20%;
+    }
+}

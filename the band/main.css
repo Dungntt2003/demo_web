@@ -1,0 +1,335 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+
+/* FOR TABLET */
+body {
+    margin: 0;
+    padding : 0;
+    line-height: 1.6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* HEADING */
+
+
+.heading {
+    background-color: black;
+    width : 100%;
+    position: fixed;
+    color : white;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading-item {
+    display : inline-block;
+    padding : 8px 20px;
+    color : white;
+    text-decoration: none;
+
+}
+.heading-item:hover {
+    background-color: #ccc;
+    color : black;
+}
+.heading-find {
+    padding : 8px 20px;
+}
+.heading-find:hover {
+    background-color: orangered;
+}
+
+
+
+
+/* BODY  */
+
+/* Intro */
+.intro {
+    padding: 38px 0;
+}
+
+.intro-pic {
+    width : 100%;
+    position: relative;
+}
+
+.intro-des {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -150px;
+    color : white;
+    text-align: center;
+}
+
+/* THE BAND */
+.band {
+    padding :20px 16px;
+}
+.general-header {
+    padding : 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px ;
+}
+.band-des{
+    color: #ccc;
+    font-style: italic;
+    text-align: center;
+}
+.band-para{
+    font-size: 14px;
+    text-align: justifys;
+}
+
+
+.band-member {
+    display : flex;
+    justify-content: space-around;
+}
+
+.band-list {
+    width: 20%;
+    text-align: center;
+    margin: 60px 0;;
+}
+.band-name{
+    font-size: 14px;
+}
+.band-pic {
+    width: 100%;
+}
+
+
+/* tour  */
+
+.tour {
+    padding : 74px 16px;
+    background-color: black;
+    color : white;
+}
+.tour-para {
+    font-size: 14px;
+    color : #ccc;
+    font-style: italic;
+    text-align: center;
+}
+.tour-list {
+    margin: 41px 0;
+}
+.tour-line{
+    width : 100%;
+    height : 40px;
+    background-color: white ;
+    color : rgb(160, 156, 156);
+    display : flex;
+    padding : 4px 12px;
+    border: solid 1px #ccc;
+    align-items: center;
+}
+
+.tour-month {
+    font-size: 14px;
+}   
+.tour-order {
+    margin-left: 12px;
+    background-color: #f44336;
+    color : white;
+    padding : 1px 4px;
+    font-size: 12px;
+}
+
+
+.tour-place {
+    display : flex;
+    justify-content: space-between;
+
+}
+
+.tour-three {
+    width : 32%;
+    background-color: white;
+    color : black;
+}
+.tour-pic {
+    width : 100%;
+}
+.tour-content {
+    padding : 17px 16px;
+}
+.tour-header {
+    font-size: 14px;
+    font-weight: 600;
+    padding : 0;
+    margin: 0;
+}
+.tour-des {
+    color :rgb(160, 156, 156);
+    font-size: 15px;
+}
+.tour-para1 {
+    font-size: 15px;
+}
+.tour-btn {
+    background-color: black;
+    padding : 10px 16px;
+    color : white;
+    font-size: 15px;
+    border : none;
+}
+
+.tour-btn:hover {
+    background-color: #ccc;
+    color : black;
+    cursor: pointer;
+}
+
+
+/* CONTACT  */
+
+.contact {
+    padding : 74px 16px;
+}
+.contact-para {
+    font-size: 14px;
+    font-style: italic;
+    color : rgb(160, 156, 156);
+    text-align: center;
+}
+.contact-list {
+    display : flex;
+    justify-content: space-between;
+}
+.contact-item{
+    flex: 1;
+}
+.contact-box {
+    display : flex;
+}
+.contact-thing i{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.contact-item input {
+    padding : 8px 12px;
+    margin-right: 4px;
+}
+.width{
+    width : 100%;
+    margin-top: 12px;
+}
+.contact-btn {
+    margin-top: 12px;
+    float : right;
+    background-color: black;
+    color : white;
+    padding : 12px 18px;
+    border : none;
+
+}
+.contact-btn:hover {
+    background-color: #ccc;
+    color : black;
+}
+
+
+/* Map */
+
+.map-pic {
+    width : 100%;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding : 70px 0;
+    background-color: #f7f7f7;
+}
+.footer i{
+    font-size: 25px;
+}
+.footer i:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+
+/* Respponsive */
+
+@media screen and (min-width : 1024px){
+    .band {
+        padding : 20px 300px;
+    }
+    .tour {
+        padding : 74px 300px;
+    }
+    .contact {
+        padding : 74px 300px;
+    }
+}
+
+@media screen and (max-width: 739px) {
+    .mobile {
+        display : none;
+    }
+    .band-para {
+        font-size: 14px;
+    }
+    .band-member{
+        display : flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .band-list {
+        width : 60%;
+        margin: 12px 0;
+    }
+    .tour-line {
+        padding : 5px 16px;
+    }
+    .tour-order {
+        font-size: 14px;
+        border-radius: 4px;
+    }
+    .tour-place {
+        display : block;
+        width : 100%;
+    }
+    .tour-three {
+        width: 100%;
+    }
+    .tour-three + .tour-three {
+        margin-top: 24px;
+    }
+    .tour-btn {
+        padding : 12px 18px;
+        font-size: 16px;
+    }
+    .tour-pic{
+        opacity: 0.8;
+    }
+    .tour-pic:hover {
+        opacity: 1;
+    }
+    .contact {
+        margin-bottom: 48px;
+    }
+    .contact-list {
+        display : block;
+    }
+    .contact-box {
+        display : block;
+    }
+    .contact-inp {
+        width : 100%;
+        margin: 8px 0;
+        padding : 12px 16px;
+    }
+}

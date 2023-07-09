@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+
+/* TABLET */
+
+html {
+    line-height: 1.6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f2e1e1;
+    color : #7f7e7e;
+}
+
+/* Heading */
+
+.heading-wrap {
+    display : flex;
+    justify-content: space-between;
+    flex : 1;
+    align-items: center;
+    padding : 4px 12px;
+    background-color: rgba(255,255,255,0.5);
+    position: fixed;
+    bottom : 0;
+    width : 100%;
+    z-index: 1000;
+    /* display: none; */
+}
+.heading-wrap:hover {
+    background-color: white;
+}
+.heading-list {
+
+}
+.heading-link {
+    display: inline-block;
+    padding : 8px 30px;
+    text-decoration: none;
+    color : black;
+}
+.heading-link:hover {
+    background-color: #ccc;
+}
+.special:hover{
+    background-color: black;
+    color : white;
+}
+
+/* Body */
+/* Intro */
+.intro {
+    position: relative;
+}
+.intro-pic {
+    width : 100%;
+    opacity: 0.8;
+}
+.intro-des {
+    position: absolute;
+    left :25%;
+    top : 30%;
+    font-size: 60px;
+    color : white;
+    text-align: center;
+}
+.intro-para {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.intro-para1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+/* Jane & john */
+.jane {
+    padding : 74px 16px;
+}
+.jane-pic {
+    width: 100%;
+    opacity: 0.8;
+}
+.general-header {
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 48px;
+}
+.jane-des {
+    margin: 48px 0;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.8;
+}
+.jane-button {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+.jane-btn {
+    color : white;
+    background-color: black;
+    border : none;
+    font-size: 20px;
+    font-weight: 300;
+    padding : 16px 30px;
+}
+.jane-btn:hover {
+    background-color: #ccc;
+    color : black;
+}
+
+
+/* Invite */
+.invite {
+    position: relative;
+}
+.invite-pic {
+    width : 100%;
+}
+.invite-des {
+    position: absolute;
+    top : 40%;
+    left : 50%;
+    transform: translateX(-50%);
+    color : white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 200;
+}
+.invite-special {
+    font-size: 30px;
+}
+
+
+/* Wedding */
+.wed {
+    padding : 74px 16px;
+    text-align: center;
+}
+.wed-pic {
+    width : 100%;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+.wed-wrap{
+    color : black;
+    display : flex;
+    justify-content: space-between;
+    flex : 1;
+    margin-top: 50px;
+    padding : 0 50px;
+}
+.wed-item {
+
+}
+.wed-des {
+    font-size: 14px;
+    margin-top: 12px;
+}
+.wrap-header{
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.form{
+    background-color: #ffdddd;
+    padding : 74px 16px;
+    text-align: center;
+    color : black;
+}
+.form-header {
+    font-weight: 300;
+    font-size: 40px;
+}
+.form-btn {
+    background-color: #f88179;
+    color : white;
+    padding : 20px 60px;
+    font-size: 20px;
+    border : none;
+    border-radius: 6px;
+}
+.form-des {
+    margin: 24px 0;
+}
+.form-btn:hover{
+    background-color: #ccc;
+    color : black;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    color : white;
+    text-align: center;
+    padding : 30px 0;
+}
+.footer-link {
+    color : white;
+}
+.footer-link:hover {
+    color : green;
+}
+
+/* PC */
+@media screen and (min-width : 1024px) {
+    .jane, .wed {
+        padding : 74px 200px;
+    }
+    .intro-des {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+/* Mobile */
+@media screen and (max-width : 723px){
+    .heading-wrap {
+        display : none;
+    }
+    .intro-pic {
+        min-height: 100%;
+        width : auto;
+    }
+    .intro-des {
+        left: 50% ;
+        transform: translateX(-50%);
+        top : 20%;
+    }
+    .invite-pic {
+        min-width: 150%;
+        height : auto;
+    }
+    .wed-wrap {
+        display: block;
+    }
+    .wrap-item + .wrap-item {
+        margin-top: 24px;
+    }
+}
